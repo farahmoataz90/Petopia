@@ -18,7 +18,7 @@ function ReportCharts() {
             }
         ],
         options :{
-            chart: {
+            chart: {  
                 height: 350,
                 type: 'area',
                 toolbar: {
@@ -28,7 +28,7 @@ function ReportCharts() {
             markers: {
                 size: 4,
             },
-            colors: ['#4154f1', '#2eca6a', '#ff771d'],
+            colors: ['#FF6347', '#4682B4', '#FFA500'],
             fill: {
                 type: 'gradient',
                 gradient: {

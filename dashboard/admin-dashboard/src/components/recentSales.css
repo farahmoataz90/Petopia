@@ -3,7 +3,7 @@
 }
 
 .dashboard .recent-sales table thead {
-    background: #f6f6fe !important;
+    background: rgba(255, 218, 185, 1)!important;
 }
 
 .dashboard .recent-sales table thead th {
@@ -16,4 +16,16 @@
 
 .dashboard .recent-sales .dataTable-bottom {
     padding: 10px 0 0 0;
+}
+.dashboard .recent-sales .rct tr th 
+{
+
+    background: rgba(255, 218, 185, 1)!important;
+    color: rgba(10, 46, 55, 1) !important;
+
+}
+.dashboard .top-selling .rct2 tr th
+{
+    background: rgba(255, 218, 185, 1)!important;
+    color: rgba(10, 46, 55, 1) !important;
 }

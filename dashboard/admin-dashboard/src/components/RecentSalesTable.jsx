@@ -22,7 +22,7 @@ function RecentSalesTable({ items }) {
 
   return (
     <table className="table table-borderless datatable">
-        <thead className="table-light">
+        <thead className='rct'>
         <tr>
             <th scope="col">#</th>
             <th scope="col">Customer</th>

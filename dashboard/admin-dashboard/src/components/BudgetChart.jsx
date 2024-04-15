@@ -23,6 +23,7 @@ function BudgetChart() {
             {
               name: 'Budget vs spending',
               type: 'radar',
+              color: ['#FE4E05', '#FFDAB9'],
               data: [
                 { value: [4200, 3000, 20000, 35000, 50000, 18000], name: 'Allocated Budget' },
                 { value: [5800, 14000, 28000, 26000, 42000, 21000], name: 'Actual Spending' },

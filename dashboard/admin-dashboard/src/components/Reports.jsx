@@ -9,7 +9,7 @@ function Reports() {
       setFilter(filter);
     };
   return (
-    <div className="card">
+    <div className="card reports">
         <CardFilter filterChange={handleFilterChange} />
         <div className="card-body">
             <h5 className="card-title">
@@ -20,5 +20,5 @@ function Reports() {
     </div>
   )
 }
-
+  
 export default Reports

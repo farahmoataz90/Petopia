@@ -32,12 +32,14 @@ function WebTrafficChart() {
                 show: false
               },
               data: [
-                { value: 1048, name: 'Search Engines' },
-                { value: 735, name: 'Direct' },
-                { value: 580, name: 'Email' },
-                { value: 484, name: 'Union Ads' },
-                { value: 300, name: 'Video Ads' }
-              ]
+                { value: 2000, name: 'Dogs' },
+                { value: 700, name: 'Cats' },
+                { value: 500, name: 'Monkeys' },
+                { value: 360, name: 'Turtels' }
+              
+              ],
+               // Set custom colors here
+               color: ['rgba(255, 133, 26, 1)', 'rgba(255, 174, 102, 1)', 'rgba(255, 201, 153, 1)', 'rgba(251, 219, 191, 1)']
             }
           ]
         });

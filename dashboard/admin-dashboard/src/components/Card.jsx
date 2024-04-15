@@ -7,7 +7,7 @@ function Card({card}) {
     const handleFilterChange = filter => {
       setFilter(filter);
     };
-
+  
 
   return (
     <div className="col-xxl-4 col-md-6">

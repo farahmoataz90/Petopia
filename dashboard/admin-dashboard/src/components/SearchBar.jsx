@@ -13,7 +13,7 @@ function SearchBar() {
             <button type='submit' title='search'>
                 <i className='bi bi-search'></i>
             </button>
-        </form>
+        </form>  
 
     </div>
   );

@@ -23,7 +23,7 @@ function TopSelling() {
         fetchData();
       },[]);
 
-
+  
 
   return (
     <div className="card top-selling overflow-auto">
@@ -33,7 +33,7 @@ function TopSelling() {
                 Top Selling <span>| {filter}</span>
             </h5>
             <table className="table table-borderless">
-                <thead className="table-light">
+                <thead className="rct2">
                     <tr>
                         <th scope="col">Preview</th>
                         <th scope="col">Product</th>

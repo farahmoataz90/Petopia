@@ -43,7 +43,7 @@ function NavNotice() {
             </li>
             <li>
                <hr className='dropdown-divider'/> 
-            </li>
+            </li>  
 
             <li className='notification-item '>
                 <i className='bi bi-check-circle text-success'></i>

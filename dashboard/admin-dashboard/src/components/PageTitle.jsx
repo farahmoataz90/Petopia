@@ -3,7 +3,7 @@ import './pageTitle.css';
 
 function PageTitle() {
   return (
-    <div className="pageTitle">
+    <div className="pagetitle">
         <h1>Dashboard</h1>
     <nav>
         <ol className="breadcrumb">

@@ -34,3 +34,9 @@
 .dashboard .filter .dropdown-item {
     padding: 8px 15px;
 }
+
+.dashboard .card .card-body .card-title
+{
+    color: #d65627;
+    
+}

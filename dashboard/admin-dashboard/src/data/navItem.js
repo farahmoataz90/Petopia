@@ -20,20 +20,11 @@ const navList = [
         icon: 'bi bi-box-arrow-in-right',
     },
     {
-        _id: 5,
-        name: 'Setting',
-        icon: 'bi bi-gear',
-    },
-    {
         _id: 6,
         name: 'F.A.Q',
         icon: 'bi bi-question-circle',
     },
-    {
-        _id: 7,
-        name: 'Blank',
-        icon: 'bi bi-file-earmark',
-    },
+
 
 ];
 export default navList;

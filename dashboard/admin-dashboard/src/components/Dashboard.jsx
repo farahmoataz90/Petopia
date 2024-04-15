@@ -42,7 +42,7 @@ function Dashboard() {
                   </div>
                   <div className="col-12">
                     {/* top selling table */}
-                    <TopSelling />
+                    <TopSelling />  
                   </div>
                 </div>
             </div>

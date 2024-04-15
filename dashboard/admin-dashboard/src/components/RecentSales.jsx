@@ -36,7 +36,7 @@ function RecentSales() {
             </h5>
             <RecentSalesTable items={items} />
         </div>
-    </div>
+    </div>  
   )
 }
 

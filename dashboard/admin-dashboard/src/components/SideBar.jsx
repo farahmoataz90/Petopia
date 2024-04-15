@@ -9,7 +9,7 @@ function SideBar() {
             <li className="nav-item">
                <a className="nav-link" href="/">
                   <span className="bi bi-grid"></span>
-                  <span>Dashboard</span>
+                  <span className='title'>Dashboard</span>
                </a>
             </li>
 
@@ -19,8 +19,8 @@ function SideBar() {
                     data-bs-toggle="collapse"
                     href='#'
                 >
-                    <i className='bi bi-meni-bottom-wide'></i>
-                    <span>Documents</span>
+                    <i className='bi bi-menu-button-wide'></i>
+                    <span className='title'>Documents</span>
                     <i className='bi bi-chevron-down ms-auto'></i>
 
                 </a>
@@ -53,115 +53,14 @@ function SideBar() {
                 </ul>
             </li>
 
-            <li className="nav-item">
-                <a className='nav-link collapsed'
-                   data-bs-target="#forms-nav"
-                    data-bs-toggle="collapse"
-                    href='#'
-                >
-                    <i className='bi bi-meni-bottom-wide'></i>
-                    <span>Forms</span>
-                    <i className='bi bi-chevron-down ms-auto'></i>
-
-                </a>
-
-                <ul
-                    id='forms-nav'
-                    className='nav-content collapse'
-                    data-bs-parent ="#sidebar-nav"
-
-                >
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>Application Form</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>Release Form</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>Cancellation Form</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li className="nav-item">
-                <a className='nav-link collapsed'
-                   data-bs-target="#tables-nav"
-                    data-bs-toggle="collapse"
-                    href='#'
-                >
-                    <i className='bi bi-layout-text-window-reverse'></i>
-                    <span>Tables</span>
-                    <i className='bi bi-chevron-down ms-auto'></i>
-
-                </a>
-                <ul
-                    id='forms-nav'
-                    className='nav-content collapse'
-                    data-bs-parent ="#sidebar-nav"
-
-                >
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>General Tables</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>Data Tables</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li className="nav-item">
-                <a className='nav-link collapsed'
-                   data-bs-target="#charts-nav"
-                    data-bs-toggle="collapse"
-                    href='#'
-                >
-                    <i className='bi bi-bar-chart'></i>
-                    <span>Charts</span>
-                    <i className='bi bi-chevron-down ms-auto'></i>
-
-                </a>
-                <ul
-                    id='forms-nav'
-                    className='nav-content collapse'
-                    data-bs-parent ="#sidebar-nav"
-
-                >
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>chart.js</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            <i className='bi bi-circle'></i>
-                            <span>Apex charts</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+           
 
 
 
             <li className='nav-heading'>Pages</li>
             {navList.map(nav=>(
                 <li className='nav-item' key={nav._id}>
-                    <a className='nav-link collapsed' href='#'>
+                    <a className='nav-link collapsed orange' href='#'>
                         <i className={nav.icon}></i>
                         <span>{nav.name}</span>
                     </a>
