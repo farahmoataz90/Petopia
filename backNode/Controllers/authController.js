@@ -37,7 +37,7 @@ const createSendToken = (user, statusCode, res) => {
     });
 };
 
-exports.signup = catchAsync(async (req, res, next) => {
+const signup = catchAsync(async (req, res, next) => {
     const newUser = await User.create({
         name: req.body.name,
         email: req.body.email,
@@ -47,7 +47,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     createSendToken(newUser, 201, res);
 });
 
-exports.login = catchAsync(async (req, res, next) => {
+const login = catchAsync(async (req, res, next) => {
     const { email, password } = req.body;
 
     if (!email || !password)
@@ -62,7 +62,7 @@ exports.login = catchAsync(async (req, res, next) => {
 });
 
 
-exports.protect = catchAsync(async (req, res, next) => {
+const protect = catchAsync(async (req, res, next) => {
 
     // get token and check if it's there
     let token;
@@ -88,7 +88,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     next();
 });
 
-exports.restrictTo = (...roles) => {
+const restrictTo = (...roles) => {
     return (req, res, next) => {
         // roles ['admin', 'lead-guide']. role='user'
         if (!roles.includes(req.user.role))
@@ -97,4 +97,9 @@ exports.restrictTo = (...roles) => {
     }
 };
 
-    
+module.exports = {
+    signup,
+    login,
+    protect,
+    restrictTo
+}
