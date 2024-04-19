@@ -1,0 +1,61 @@
+@media  (min-width:992px) {
+    .py-lg-16 {
+        padding-bottom: 7.5rem!important;
+        padding-top: 7.5rem!important;
+    }
+}
+
+
+
+
+.py-6 {
+    padding-bottom: 2.5rem!important;
+    padding-top: 2.5rem!important;
+}
+
+.title
+{
+    /* font-size: 65px; */
+    font-weight: 800;
+    color:#0A2E37;
+
+}
+
+.Orangecol
+{
+    color: #FF7700;
+}
+
+.titleP
+{
+    font-weight: 400;
+    /* font-size: 16px; */
+    color: #6B6E87;
+}
+
+.bttn
+{
+    
+    color:rgba(255, 255, 255, 1);
+    background-color: #FF7700;
+}
+.bttn:hover
+{
+    
+    color:#FF7700;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.bttn2
+{
+    
+    border-color: #FF7700;
+    color:#FF7700;
+    background-color: rgba(255, 255, 255, 1);
+}
+.bttn2:hover
+{
+    
+    color:rgba(255, 255, 255, 1);
+    background-color: #FF7700;
+}
