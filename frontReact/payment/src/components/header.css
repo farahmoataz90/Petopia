@@ -1,0 +1,42 @@
+
+.logo img
+{
+    max-height: 40px;
+    margin-right: 50px;
+  
+} 
+
+input
+{
+    display: none;
+}
+.sun
+{
+    cursor: pointer;
+}
+nav{
+
+        /* transition: all 0.5s; */
+        /* z-index: 997; */
+        /* height: 60px; */
+        box-shadow: 0px 2px 20px rgba(1,41,112,0.1);
+        background-color: #fff;
+        /* padding-left: 20px; */
+    
+}
+.bttn
+{
+    
+    color:rgba(255, 255, 255, 1);
+    background-color: #FF7700;
+}
+.bttn:hover
+{
+    
+    color:#FF7700;
+    background-color: rgba(255, 255, 255, 1);
+}
+.colr
+{
+    color: #0A2E37!important;
+}
