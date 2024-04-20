@@ -25,7 +25,7 @@ function Main() {
                         <div className="card-body px-0 pb-0">
                             <div className="card-body p-0">
                                 <form action="" className="row g-3">
-                                   <div className="col-md-6">
+                                   <div className="col-md-6 ">
 								   	   <label className="form-label">First name</label>
 								   	   <input type="text" className="form-control" value="Jacqueline" aria-label="First name"/>
 								   </div>
@@ -51,7 +51,7 @@ function Main() {
 								    </div>
                                     <div className="col-md-4">
 									    <label className="form-label">Country</label>
-									    <select className="form-select" aria-label="Default select example">
+									    <select className="form-select select" aria-label="Default select example">
 										    <option value="1">UK</option>
 										    <option value="2">USA</option>
 										    <option value="3">India</option>
@@ -59,7 +59,7 @@ function Main() {
 								   </div>
                                    <div className="col-md-4">
 									<label className="form-label">State</label>
-									<select className="form-select" aria-label="Default select example">
+									<select className="form-select select" aria-label="Default select example">
 										<option value="1">New York</option>
 										<option value="2">California</option>
 										<option value="3">Mumbai</option>
@@ -109,12 +109,15 @@ function Main() {
 												<span className="d-block small">Expiry 08/2024</span>
 											</span>
 										</label>
-										<input className="form-check-input" type="radio" name="payOptions" id="standard" checked=""/>
+										<input className="form-check-input" type="radio" name="payOptions" id="standard"/>
 									</div>
 
 									<div className="d-flex justify-content-end gap-3 mt-3">
 										<a href="/" className="text-body-secondary text-primary-hover small">Set as default</a>
-										<a href="/" className="heading-color text-primary-hover fw-semibold small" data-bs-toggle="modal" data-bs-target="#editcard"><i className="bi bi-pencil-square me-1"></i>Edit</a>
+										<a href="/" className="heading-color text-primary-hover fw-semibold small" data-bs-toggle="modal" data-bs-target="#editcard">
+											<i className="bi bi-pencil-square me-1"></i>
+											Edit
+										</a>
 									</div>
 								</div>
 							</div>
@@ -145,7 +148,7 @@ function Main() {
 								<div className="form-check border rounded p-3">
 									<div className="d-flex justify-content-between">
 										<label className="form-check-label d-flex align-items-start pe-4" for="standard3">
-											<img src={paypal} className="w-30px me-3 mt-1" alt=""/>
+											<img src={paypal} className="w-40px me-3 mt-1" alt=""/>
 											<span>
 												<span className="d-block fw-semibold heading-color mb-1">Pay using PayPal</span>
 												<span className="d-block small">Fast, easy an secure</span>

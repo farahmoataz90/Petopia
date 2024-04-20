@@ -1,5 +1,23 @@
-.card-header:first-child {
-    border-radius: 0.4rem 0.4rem 0 0;
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px!important;
+  border-radius: 5px;
+
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #b08d4c; /* Change color on focus */
+}
+.select
+{
+    
+    width: 100%;
+    padding: 10px!important;
+    border-radius: 5px;
 }
 h5, .h5 {
     font-size: calc(1.275rem + 0.3vw);
@@ -25,34 +43,6 @@ h5, .h5 {
     border-bottom: 1px solid #dce0e5 !important;
 }
 
-
-.card-header {
-    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-    margin-bottom: 0;
-    color: var(--bs-card-cap-color);
-    background-color: var(--bs-card-cap-bg);
-    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
-}
-
-.btn {
-    letter-spacing: 0.5px!important;
-    position: relative!important;
-    overflow: hidden!important;
-    outline: 0!important;
-    margin-bottom: 6px!important;
-}
-.form-check {
-    display: block;
-    min-height: 1.5rem;
-    padding-left: 1.5em;
-    margin-bottom: 0.125rem;
-}
-.form-check .form-check-input, .form-check .form-check-label {
-    cursor: pointer;
-}
-.form-check-input[type=checkbox] {
-    border-radius: 0.25em;
-}
 .form-check .form-check-input {
     float: left;
     margin-left: -1.5em;
