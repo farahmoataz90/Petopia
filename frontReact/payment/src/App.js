@@ -5,6 +5,7 @@ import'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <>
     <Header />
     <Main />
+    <Footer />
     </>
   );
 }

@@ -5,16 +5,18 @@ import'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
-import Adoption from './components/Adoption';
-import Buddy from './components/Buddy';
+// import Adoption from './components/Adoption';
+// import Buddy from './components/Buddy';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
   return (
     <>
       <Header/>
       <Main />
-      <Adoption />
-      <Buddy />
+      {/* <Adoption /> */}
+      {/* <Buddy /> */}
+      <Footer />
     </>
   );
 }
