@@ -1,12 +1,12 @@
 import React from 'react';
 import './footer.css';
 import cat from './images/cta-banner.png';
-import backG from './images/cta-bg.jpg';
+// import backG from './images/cta-bg.jpg';
 
 function Footer() {
   return (
     <>
-    <section className="CTA has-bg-image" aria-label="cta">
+    <section className="CTA has-bg-image bg-opacity-10" aria-label="cta">
         <div className="CONTAINER">
 
           <figure className="CTA-BANNER">

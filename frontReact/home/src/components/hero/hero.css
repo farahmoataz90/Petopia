@@ -1,0 +1,15 @@
+.orange
+{
+    background: #FF7700;
+    color: white;
+}
+.orange2
+{
+    color: #FF7700;
+}
+.bbb
+{
+    /* background-image: url(../../assets/mainphoto.jpg); */
+     background-size: cover !important;
+      background-position: center !important;
+}
