@@ -5,9 +5,10 @@ import'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/footer/Footer';
 // import Adoption from './components/Adoption';
 // import Buddy from './components/Buddy';
-import Footer from './components/footer/Footer.jsx';
+// import Footer from './components/footer/Footer.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Main />
       {/* <Adoption /> */}
       {/* <Buddy /> */}
+      {/* <Footer /> */}
       <Footer />
     </>
   );
