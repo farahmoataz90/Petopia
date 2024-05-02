@@ -1,5 +1,6 @@
 // import mainPhoto from '../assets/mainphoto.jpg';
-import main from '../../assets/mainphoto.jpg';
+// import main from '../../assets/mainphoto.jpg';
+import main from '../../../assets/mainphoto.jpg';
 import React from 'react'
 import './hero.css';
 

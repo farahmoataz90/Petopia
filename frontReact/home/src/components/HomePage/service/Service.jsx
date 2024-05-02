@@ -1,6 +1,7 @@
 import React from 'react'
 import './service.css'
-import photo from '../../assets/ourservicess.png';
+// import photo from '../../assets/ourservicess.png';
+import photo from '../../../assets/ourservicess.png';
 
 function Service() {
   return (

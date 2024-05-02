@@ -3,21 +3,16 @@ import 'remixicon/fonts/remixicon.css';
 import'bootstrap/dist/css/bootstrap.min.css';
 import'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
+import Header from './components/header/Header';
+import Main from './components/HomePage/Main';
 import Footer from './components/footer/Footer';
-// import Adoption from './components/Adoption';
-// import Buddy from './components/Buddy';
-// import Footer from './components/footer/Footer.jsx';
+
 
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <Main />
-      {/* <Adoption /> */}
-      {/* <Buddy /> */}
-      {/* <Footer /> */}
       <Footer />
     </>
   );
