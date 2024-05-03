@@ -50,6 +50,7 @@ const getAllProducts = async (req, res, next) => {
 })
 }
 
+getAllProducts();
 const getProduct = async (req, res, next) => {
     const id = req.params.id;
     const product = await Product.findById(id);
@@ -95,6 +96,8 @@ const deleteProduct = async (req, res, next) => {
     });
 };
 
+
+
 module.exports = {
     getAllProducts, 
     getProduct, 
@@ -102,3 +105,4 @@ module.exports = {
     updateProduct,
     deleteProduct
 };
+
