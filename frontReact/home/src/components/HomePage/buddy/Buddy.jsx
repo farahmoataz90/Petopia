@@ -1,11 +1,14 @@
 import React from 'react';
 import './buddy.css';
 
-import mon from '../../assets/mon.jpg';
-import male from '../../assets/male.png';
-import hoda from '../../assets/hoda.jpg';
-import eaters from '../../assets/eaters.jpg';
-import solhefa from '../../assets/solhefa.jpg';
+
+import hoda from '../../../assets/hoda.jpg';
+import eaters from '../../../assets/eaters.jpg';
+import solhefa from '../../../assets/solhefa.jpg';
+
+import mon from '../../../assets/mon.jpg';
+import male from '../../../assets/male.png';
+
 
 function Buddy() {
   return (

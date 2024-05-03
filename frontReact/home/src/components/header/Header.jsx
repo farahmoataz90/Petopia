@@ -1,7 +1,7 @@
 import React from 'react'
 import "./header.css"
-import mainIcon from '../assets/petopia.png';
-import Sun from '../assets/sun.svg';
+import mainIcon from '../../assets/petopia.png';
+import Sun from '../../assets/sun.svg';
 
 function Header() {
   return (
