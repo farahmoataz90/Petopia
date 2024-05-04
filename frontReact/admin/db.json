@@ -7,7 +7,7 @@
       "price": "980$",
       "description": "mohsen is a dog that is really frindly",
       "createdAt": "2024-03-05",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "hana",
@@ -16,26 +16,17 @@
       "price": "0",
       "description": "hana is a cat that is really frindly",
       "createdAt": "2024-03-08",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "oreo",
-      "gender": "male",
-      "category": "pet",
-      "price": "0",
+      "gender": "female",
+      "category": "other",
+      "price": "120",
       "description": "oreo is a dog that is really frindly",
       "createdAt": "2024-03-05",
-      "id": 3
-    },
-    {
-      "id": "2535",
-      "name": "fouad",
-      "gender": "male",
-      "category": "monkey",
-      "price": "0",
-      "description": "fouad is my big brother",
-      "date": "2024-05-03",
-      "createdAt": "Fri May 03"
+      "id": "3",
+      "date": "2024-03-05"
     },
     {
       "id": null,
@@ -56,6 +47,36 @@
       "description": "evefv",
       "date": "2024-05-22",
       "createdAt": "2024-05-03"
+    },
+    {
+      "id": null,
+      "name": "maya",
+      "gender": "female",
+      "category": "bird",
+      "price": "120$",
+      "description": "fgwgfweu",
+      "date": "2024-05-31",
+      "createdAt": "2024-05-04"
+    },
+    {
+      "id": null,
+      "name": "fouad",
+      "gender": "female",
+      "category": "fish",
+      "price": "5665",
+      "description": "fguyg",
+      "date": "2024-05-04",
+      "createdAt": "2024-05-04"
+    },
+    {
+      "id": null,
+      "name": "fouad",
+      "gender": "female",
+      "category": "monkey",
+      "price": "5665",
+      "description": "fguyg",
+      "date": "2024-05-04",
+      "createdAt": "2024-05-04"
     }
   ]
 }
