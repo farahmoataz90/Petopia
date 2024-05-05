@@ -1,14 +1,15 @@
 const express = require("express");
-const router = express.Router();
-const productController = require('../Controllers/petController');
+const productController = require('../Controllers/productController');
 const authController = require('../Controllers/authController');
 
-router.get("/", authController.protect, getAllProducts);
+const router = express.Router();
+router.route('/')
+.get(authController.protect, productController.getAllProducts)
+.post(authController.protect, authController.restrictTo('admin'), productController.addProduct);
 
-router.route("/:id")
+router.route('/:id')
 .get(authController.protect, productController.getProduct)
-.post(authController.protect, authController.restrictTo(['admin']), productController.addProduct)
-.patch(authController.protect, authController.restrictTo(['admin']), productController.updateProduct)
-.delete(authController.protect, authController.restrictTo(['admin']), productController.deleteProduct);
+.patch(authController.protect, authController.restrictTo('admin'), productController.updateProduct)
+.delete(authController.protect, authController.restrictTo('admin'), productController.deleteProduct);
 
 module.exports = router;
