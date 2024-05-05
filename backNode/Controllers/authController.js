@@ -1,10 +1,9 @@
 const crypto = require('crypto');
-const { promisify } = require('util');
 const AppError = require('../utils/appError');
 const jwt = require('jsonwebtoken');
 const User = require('../Models/userModel');
-const catchAsync = require('../utils/catchAsync');
-const sendEmail = require('../utils/email');
+const catchAsync = require('../utils/asyncHandler');
+//const sendEmail = require('../utils/email');
 
 const signToken = id => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -21,8 +20,8 @@ const createSendToken = (user, statusCode, res) => {
         httpOnly: true
     };
 
-    if (process.env.NODE_ENV === 'production')
-        cookieOptions.secure = true;
+    // if (process.env.NODE_ENV === 'production')
+    //     cookieOptions.secure = true;
 
     res.cookie('jwt', token, cookieOptions);
     // sheel el password 3shan mtrg3sh fl json response
@@ -42,7 +41,7 @@ const signup = catchAsync(async (req, res, next) => {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        passwordconfirm: req.body.passwordconfirm
+//        passwordconfirm: req.body.passwordconfirm
     });
     createSendToken(newUser, 201, res);
 });
@@ -55,7 +54,7 @@ const login = catchAsync(async (req, res, next) => {
 
     const user = await User.findOne({ email }).select('+password');
     // Equivalent To User.findOne({email: email});
-    console.log(user);
+    // console.log(user);
     if (!user || !(await user.correctPassword(password, user.password)))
         return next(new AppError("Username or password not correct", 401));
     createSendToken(user, 200, res);
@@ -66,7 +65,7 @@ const protect = catchAsync(async (req, res, next) => {
 
     // get token and check if it's there
     let token;
-    console.log(req.headers);
+    // console.log(req.headers);
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
         token = req.headers.authorization.split(' ')[1];
     }
@@ -77,7 +76,7 @@ const protect = catchAsync(async (req, res, next) => {
 
     // verification token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(decoded);
+    // console.log(decoded);
     // check if user still exists
     const currentUser = await User.findById(decoded.id);
     if (!currentUser)

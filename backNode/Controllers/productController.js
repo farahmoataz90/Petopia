@@ -1,6 +1,6 @@
 const Product = require('../Models/productModel');
 
-const getAllProducts = async (req, res, next) => {
+module.exports.getAllProducts = async (req, res, next) => {
 
     // Pets?price[lte]=2000&price[gte]=1000
     const queryObj = { ...req.query };
@@ -37,32 +37,32 @@ const getAllProducts = async (req, res, next) => {
 
     query = query.skip(skip).limit(limit);
     if (req.query.page) {
-        const numPets = await Pet.countDocuments();
+        const numPets = await Product.countDocuments();
         if (skip >= numPets || req.query.page < 1)
             throw new Error('Pet controller get All error: this page does not exist');
     }
 
-    const Pets = await query;
+    const Products = await query;
 
     res.status(200).json({
     status: 'success',
-    data: Pets
+    data: Products
 })
 }
 
-getAllProducts();
-const getProduct = async (req, res, next) => {
+module.exports.getProduct = async (req, res, next) => {
     const id = req.params.id;
-    const product = await Product.findById(id);
+    const product  = await Product.findById(id);
     if (!product)
         next(new appError('no product with this id was found', 400));
+
     res.status(200).json({
         status: 'success',
-        data: Product
+        data: product
     });
 }
 
-const addProduct = async (req, res, next) => {
+module.exports.addProduct = async (req, res, next) => {
     const product = await Product.create(req.body);
 
     res.status(201).json({
@@ -71,7 +71,7 @@ const addProduct = async (req, res, next) => {
     });
 };
 
-const updateProduct = async (req, res, next) => {
+module.exports.updateProduct = async (req, res, next) => {
 
     const updateBody = req.body;
     const id = req.params.id;
@@ -85,7 +85,7 @@ const updateProduct = async (req, res, next) => {
     });
 };
 
-const deleteProduct = async (req, res, next) => {
+module.exports.deleteProduct = async (req, res, next) => {
 
     const id = req.params.id;
     await Product.findByIdAndDelete(id);
@@ -94,15 +94,5 @@ const deleteProduct = async (req, res, next) => {
         status: 'success',
         data: null
     });
-};
-
-
-
-module.exports = {
-    getAllProducts, 
-    getProduct, 
-    addProduct,
-    updateProduct,
-    deleteProduct
 };
 
