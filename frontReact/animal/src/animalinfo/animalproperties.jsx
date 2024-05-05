@@ -6,7 +6,7 @@ function Anprop(props) {
         <div>
             
             <div className="bgcolr p-3 rounded-2 mx-1 ">
-            <h3>{props.property}</h3>
+            <h5>{props.property}</h5>
            
            <p> {props.des}</p>
         </div>

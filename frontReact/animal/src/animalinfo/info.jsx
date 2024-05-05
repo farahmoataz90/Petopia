@@ -5,6 +5,7 @@ function Details(props) {
         <div>
             <h1>{props.name}</h1>
             <p>{props.loc}</p>
+            <h3>{props.price}</h3>
 
           
         </div>
