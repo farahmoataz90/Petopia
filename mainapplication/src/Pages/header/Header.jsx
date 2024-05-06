@@ -7,7 +7,7 @@ function Header() {
   return (
     <nav className='navbar navbar-default  navbar navbar-expand-lg navbar-light'>
         <div className='px-0 container'>
-            <a className='navbar-brand logo' href='/' >
+            <a className='navbar-brand logo' href='/home' >
                 <img src={mainIcon} alt='petopia'/>
             </a>
           
@@ -27,21 +27,21 @@ function Header() {
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="/">Services</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="#Services">Services</a>
                     </div>
 
                 </div>
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="/">Adopt</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="/adopt">Adopt</a>
                     </div>
 
                 </div>
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="/">Food</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="/food">Food</a>
                     </div>
 
                 </div>
@@ -55,7 +55,7 @@ function Header() {
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="/">Contact Us</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="#contact">Contact Us</a>
                     </div>
 
                 </div>

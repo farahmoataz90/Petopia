@@ -1,40 +1,40 @@
 
 .logo img
 {
-    max-height: 40px;
-    margin-right: 50px;
+    max-height: 40px!important;
+    margin-right: 50px!important;
   
 } 
 
 input
 {
-    display: none;
+    display: none!important;
 }
 .sun
 {
-    cursor: pointer;
+    cursor: pointer!important;
 }
 nav{
 
         /* transition: all 0.5s; */
         /* z-index: 997; */
         /* height: 60px; */
-        box-shadow: 0px 2px 20px rgba(1,41,112,0.1);
-        background-color: #fff;
+        box-shadow: 0px 2px 20px rgba(1,41,112,0.1)!important;
+        background-color: #fff!important;
         /* padding-left: 20px; */
     
 }
 .bttn
 {
     
-    color:rgba(255, 255, 255, 1);
-    background-color: #FF7700;
+    color:rgba(255, 255, 255, 1)!important;
+    background-color: #FF7700!important;
 }
 .bttn:hover
 {
     
-    color:#FF7700;
-    background-color: rgba(255, 255, 255, 1);
+    color:#FF7700!important;
+    background-color: rgba(255, 255, 255, 1)!important;
 }
 .colr
 {

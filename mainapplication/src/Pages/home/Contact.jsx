@@ -6,13 +6,13 @@ function Contact() {
     <section className="container bb">
     <div className=" py-lg-8 mt-5 mb-5 justify-content-center row">
            <div className="text-center col-lg-8 col-md-12 col-sm-12">
-               <h2 className=" display-8 fw-bold ">Contact <span className='orange2'>Us</span></h2>
+               <h2 className=" display-8 fw-bold " id="contact">Contact <span className='orange2'>Us</span></h2>
                
            </div>
        </div>
        <div className="mb-3 d-grid gap-2 col-6 mx-auto">
           {/* <label for="exampleFormControlInput1" className="form-label">Email address</label>/ */}
-           <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Enter your Email"/>
+           <input type="email" className="form-control"  placeholder="Enter your Email"/>
       </div>
      <div class="mb-3 d-grid gap-2 col-6 mx-auto">
     {/* <label for="exampleFormControlTextarea1" className="form-label">Enter</label> */}

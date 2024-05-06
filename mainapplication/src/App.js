@@ -16,6 +16,9 @@ import {
 import Login from './Pages/login/Login';
 import Sign from './Pages/signup/Sign';
 import Home from './Pages/home/Home';
+import AnimalPage from './Pages/pets/AnimalPage';
+import FoodPage from './Pages/food/FoodPage';
+import AnimalInfo from './Pages/InfoPet/AnimalInfo';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +34,21 @@ const router = createBrowserRouter([
   {
     path:'/home',
     element: <Home/>
+  },
+  {
+    path:'/adopt',
+    element: <AnimalPage />
+  },
+  {
+    path:'/food',
+    element: <FoodPage />
+  },
+  {
+    path:'/info',
+    element: <AnimalInfo />
   }
+
+
 ])
 
 function App() {
