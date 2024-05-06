@@ -6,16 +6,16 @@ function Page(){
             <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
+     <a class="page-link" href="#" aria-label="Previous">
+     <h5> <span aria-hidden="true">&laquo;</span></h5>
       </a>
     </li>
-    <li class="page-item"><a class="page-link pnum" href="#">1</a></li>
-    <li class="page-item"><a class="page-link pnum" href="#">2</a></li>
-    <li class="page-item"><a class="page-link pnum" href="#">3</a></li>
+    <li class="page-item"><a class="page-link pnum" href="#"><h5> 1</h5></a></li>
+    <li class="page-item"><a class="page-link pnum" href="#"><h5> 2</h5></a></li>
+    <li class="page-item"><a class="page-link pnum" href="#"><h5> 3</h5></a></li>
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
+      <h5> <span aria-hidden="true">&raquo;</span></h5> 
       </a>
     </li>
   </ul>

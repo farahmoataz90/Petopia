@@ -3,6 +3,7 @@ import "./css/card.css";
 function Card(props) {
     return(
         <div>
+            <div className="p-3">
         <div class="card position-relative" >
         <div>
             <img src={props.image} class="card-img-top" alt="..."/>
@@ -14,7 +15,7 @@ function Card(props) {
          
 
              <button class="btn bcolor position-absolute top-0 end-0 m-3" >View</button>
-      
+             </div>
         </div>
       </div>
       </div>

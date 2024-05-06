@@ -20,10 +20,10 @@ function Animalpage() {
             <Item name="All" item1="cat" item2="3ersa" item3="dog" />
             <Item name="Gender" item1="Male" item2="Female" />
             <Item name="Price" item1="100-300" item2="400-600" item3="700-1000" />
-            <Item name="Name"/>
+           {/* // <Item name="Name"/> */}
             </div> 
             </div>
-            <div className="container">
+            <div className="container my-4">
             <div className="row">
 
                 <div className="col-md-4"> 
@@ -35,10 +35,22 @@ function Animalpage() {
             
                 </div>
                 <div className="col-md-4"> 
+                <Card image={imageSrc} name="Medhat" age="1 year" category="Dog"/>         
+                </div>
+               
+                <div className="col-md-4"> 
+                <Card image={imageSrc} name="Medhat" age="1 year" category="Dog"/>
+                </div>
+                
+                <div className="col-md-4"> 
                 <Card image={imageSrc} name="Medhat" age="1 year" category="Dog"/>
             
                 </div>
-            </div>
+                <div className="col-md-4"> 
+                <Card image={imageSrc} name="Medhat" age="1 year" category="Dog"/>
+                </div>
+                </div>
+               
             </div>
    <div className="container my-5"> 
    

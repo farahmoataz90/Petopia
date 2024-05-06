@@ -3,7 +3,7 @@ import "./css/item.css";
 function Item(props){
     return(
         <div >
-            <div class="dropdown item ">
+            <div class="dropdown item rounded ">
         <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             { props.name}
         </button>
