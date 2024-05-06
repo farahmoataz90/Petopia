@@ -65,7 +65,7 @@ function Sign() {
                         <label htmlFor='Email'>Email</label>
                         <div className="input flex">
                             {/* <FaUserShield className='icon'/> */}
-                            <input className='form-control' type='email' onClick={(e)=>{setEmail(e.target.value)}} id='Email' placeholder='Enter your email address'/> 
+                            <input className='' type='' onClick={(e)=>{setEmail(e.target.value)}} id='Email' placeholder='Enter your email address'/> 
                         </div>
                     </div>
 
@@ -73,7 +73,7 @@ function Sign() {
                         <label htmlFor='password'>Password</label>
                         <div className="input flex">
                             {/* <BsFillShieldLockFill className='icon'/> */}
-                            <input className='form-control' type='password' onClick={(e)=>{setPassword(e.target.value)}} id='password' placeholder='Enter your password'/>
+                            <input className='' type='password' onClick={(e)=>{setPassword(e.target.value)}} id='password' placeholder='Enter your password'/>
                         </div>
                     </div>
 

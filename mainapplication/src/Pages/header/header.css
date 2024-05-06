@@ -5,11 +5,11 @@
     margin-right: 50px!important;
   
 } 
-
-input
+.inp
 {
     display: none!important;
 }
+
 .sun
 {
     cursor: pointer!important;

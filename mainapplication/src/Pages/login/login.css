@@ -21,20 +21,20 @@
   --lightWhite2: #F1F1F1;
 
 }
-.flex
+/* .flex
 {
   display: flex !important;
   align-items: center !important;
-}
+} */
 
-.grid
+/* .grid
 {
   display: grid !important;
   align-items: center !important;
   gap: 1.5rem !important;
 
-}
-html
+} */
+/* html
 {
   font-size: 90% !important;
 }
@@ -42,7 +42,7 @@ html
 a
 {
   text-decoration: none !important;
-}
+} */
 
 li
 {
@@ -55,11 +55,11 @@ li
   cursor: pointer !important;
 
 }
-img,video
+/* img,video
 {
   height: auto !important;
   width: 100% !important;
-}
+} */
 .message
 {
   /* show when the account is invalid */
@@ -373,4 +373,3 @@ max-width: 200px!important; */
 
 
 }
-

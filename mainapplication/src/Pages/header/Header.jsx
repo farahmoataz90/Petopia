@@ -13,7 +13,7 @@ function Header() {
           
 
             <button className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
             </button>
 
             <div className='navbar-collapse collapse' id='navbarSupportedContent'>
@@ -48,7 +48,7 @@ function Header() {
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="/">About Us</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="#about">About Us</a>
                     </div>
 
                 </div>
@@ -63,14 +63,14 @@ function Header() {
 
                 <div className='d-flex align-items-center order-lg-3 flex-row navbar-nav'>
                     <a type="checkbox" id="flexSwitchCheckDefault" className="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-2 mt-2" href="/">
-                         <input type="checkbox" className="form-check-input is-valid" value="light" />
+                         <input  className="form-check-input is-valid inp" value="light" />
                          <label className="form-check-label" >
                              <img src={Sun} alt='sun'/>
                          </label>
                      </a>
 
                     <div className='mt-3 mt-lg-0'>
-                    <a href="/" target="_blank" className="btn bttn">Sign In</a>
+                    <a href="/SignUP" target="_blank" className="btn bttn">Sign In</a>
                     </div>
                 </div>
             </div>
