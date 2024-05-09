@@ -36,9 +36,7 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
     -   Parameters: None
     -   Headers: None
     -   Response Sample:
-  
-
-     `{
+    -   `{
       "status": "success",
       "data": [
         {
@@ -49,7 +47,8 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
         },
         ...
       ]
-    }`
+    }
+    `
 
 **POST /api/v1/products**
 
