@@ -26,7 +26,8 @@ body
   
   font-family: "Nunito", sans-serif;
   color: #444444;
-  background-color: var(--bgcolor)!important;
+  /* background-color: var(--bgcolor)!important; */
+  background-color: #f1f1f1!important;
 }
 
 a
@@ -49,4 +50,8 @@ h6
 {
   font-family: "Nunito", sans-serif;
 
+}
+section
+{
+  background-color: #f1f1f1!important;
 }

@@ -4,7 +4,7 @@ import photo from '../assets/ourservicess.png';
 
 function Service() {
   return (
-    <section className='container'>
+    <section className='container bg-cust'>
 
     <div className=" justify-content-center row" id="Services">
           <div className="text-center col-lg-8 col-md-12 col-sm-12">

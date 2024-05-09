@@ -13,3 +13,7 @@
      background-size: cover !important;
       background-position: center !important;
 }
+.bg-cust
+{
+    background-color: #f1f1f1!important;
+}

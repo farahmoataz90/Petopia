@@ -4,6 +4,7 @@ import './App.css';
 import'bootstrap/dist/css/bootstrap.min.css';
 import'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'remixicon/fonts/remixicon.css';
 
 
 //import router dom
@@ -20,10 +21,12 @@ import AnimalPage from './Pages/pets/AnimalPage';
 import FoodPage from './Pages/food/FoodPage';
 import AnimalInfo from './Pages/InfoPet/AnimalInfo';
 import Pay from './Pages/payment/Pay';
+import FullDashbord from './Pages/dashboard/FullDashbord';
+import Admin from './Pages/admin/Admin';
 
 const router = createBrowserRouter([
   {
-    path:'/', //this folder you are in 
+    path:'/',  
     element:<Login />
 
   },
@@ -51,7 +54,16 @@ const router = createBrowserRouter([
   {
     path:'/payment',
     element: <Pay />
+  },
+  {
+    path:'/dashboard',
+    element: <FullDashbord />
+  },
+  {
+    path:'/admin',
+    element: <Admin />
   }
+
 
 
 ])

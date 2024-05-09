@@ -4,28 +4,28 @@ import './sign.css'
 import video from '../assets/video.mp4';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
 function Sign() {
 
-    const [email,setEmail]= useState('')
-    const[password,setPassword]=useState('');
-    async function submit(e)
-    {
-        e.preventDefault();
+    // const [email,setEmail]= useState('')
+    // const[password,setPassword]=useState('');
+    // async function submit(e)
+    // {
+    //     e.preventDefault();
 
-        try{
-            await axios.post("http://localhost:3000/SignUP",{
-                email,password
-            })
+    //     try{
+    //         await axios.post("http://localhost:3000/SignUP",{
+    //             email,password
+    //         })
             
-        }
-        catch(e){
-            console.log(e);
+    //     }
+    //     catch(e){
+    //         console.log(e);
 
-        }
+    //     }
 
-    }
+    // }
 
   return (
     <div className='loginPage flex'>
@@ -41,7 +41,7 @@ function Sign() {
             <div className="footerDiv flex">
                 <span className="text">Already have an account?</span>
                 <Link to={'/'}>
-                    <button className='btn'>Log in</button>
+                    <button className='btn my-2'>Log in</button>
                 </Link>
             </div>
 
@@ -65,21 +65,21 @@ function Sign() {
                         <label htmlFor='Email'>Email</label>
                         <div className="input flex">
                             {/* <FaUserShield className='icon'/> */}
-                            <input className='' type='' onClick={(e)=>{setEmail(e.target.value)}} id='Email' placeholder='Enter your email address'/> 
+                            <input className='' type=''  id='Email' placeholder='Enter your email address'/> 
                         </div>
                     </div>
 
-                    <div className="inputDiv">
+                    <div className="inputDiv mb-3">
                         <label htmlFor='password'>Password</label>
                         <div className="input flex">
                             {/* <BsFillShieldLockFill className='icon'/> */}
-                            <input className='' type='password' onClick={(e)=>{setPassword(e.target.value)}} id='password' placeholder='Enter your password'/>
+                            <input className='' type='password' id='password' placeholder='Enter your password'/>
                         </div>
                     </div>
 
                    
 
-                    <button type='submit' onClick={submit} className='btn flex'>
+                    <button type='submit' className='btn flex'>
                         <span>Sign up</span>
                     </button>
 

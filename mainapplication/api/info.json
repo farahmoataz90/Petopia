@@ -1,0 +1,249 @@
+{
+  "cards": [
+    {
+      "_id": 1,
+      "name": "Sales",
+      "icon": "bi bi-cart",
+      "amount": 145,
+      "percentage": 0.12,
+      "active": true,
+      "id": "933a"
+    },
+    {
+      "_id": 2,
+      "name": "Revenue",
+      "icon": "bi bi-currency-dollar",
+      "amount": 3246,
+      "percentage": 0.08,
+      "active": false,
+      "id": "e163"
+    },
+    {
+      "_id": 3,
+      "name": "Customers",
+      "icon": "bi bi-people",
+      "amount": 1244,
+      "percentage": -0.11,
+      "active": false,
+      "id": "6652"
+    }
+  ],
+  "news": [
+    {
+      "_id": 1,
+      "img": "../assets/items/news-1.jpg",
+      "title": "Nihil blanditiis at in nihil autem",
+      "subtitle": "Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum",
+      "category": "abc",
+      "id": "6d05"
+    },
+    {
+      "_id": 2,
+      "img": "../assets/items/news-2.jpg",
+      "title": "Quidem autem et impedit",
+      "subtitle": "Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande",
+      "category": "abc",
+      "id": "22fb"
+    },
+    {
+      "_id": 3,
+      "img": "../assets/items/news-3.jpg",
+      "title": "Id quia et et ut maxime similique occaecati ut",
+      "subtitle": "Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam",
+      "category": "abc",
+      "id": "0aac"
+    },
+    {
+      "_id": 4,
+      "img": "../assets/items/news-4.jpg",
+      "title": "Laborum corporis quo dara net para",
+      "subtitle": "Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder",
+      "category": "abc",
+      "id": "8d34"
+    },
+    {
+      "_id": 5,
+      "img": "../assets/items/news-5.jpg",
+      "title": "Et dolores corrupti quae illo quod dolor",
+      "subtitle": "Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius",
+      "category": "abc",
+      "id": "dbe6"
+    }
+  ],
+  "topselling": [
+    {
+      "_id": 1,
+      "preview": "../assets/items/product-1.jpg",
+      "name": "Ut inventore ipsa voluptas nulla",
+      "price": 64,
+      "sold": 124,
+      "id": "8800"
+    },
+    {
+      "_id": 2,
+      "preview": "../assets/items/product-2.jpg",
+      "name": "Exercitationem similique doloremque",
+      "price": 46,
+      "sold": 98,
+      "id": "396d"
+    },
+    {
+      "_id": 3,
+      "preview": "../assets/items/product-3.jpg",
+      "name": "Doloribus nisi exercitationem",
+      "price": 59,
+      "sold": 74,
+      "id": "f5f5"
+    },
+    {
+      "_id": 4,
+      "preview": "../assets/items/product-4.jpg",
+      "name": "Officiis quaerat sint rerum error",
+      "price": 32,
+      "sold": 63,
+      "id": "f52d"
+    },
+    {
+      "_id": 5,
+      "preview": "../assets/items/product-5.jpg",
+      "name": "Sit unde debitis delectus repellendus",
+      "price": 79,
+      "sold": 41,
+      "id": "73da"
+    }
+  ],
+  "recentsales": [
+    {
+      "_id": 1,
+      "number": "#2457",
+      "customer": "Brandon Jacob",
+      "product": "At praesentium minu",
+      "price": 64,
+      "status": "Approved",
+      "id": "2ea9"
+    },
+    {
+      "_id": 2,
+      "number": "#2147",
+      "customer": "Bridie Kessler",
+      "product": "Blanditiis dolor omnis similique",
+      "price": 47,
+      "status": "Pending",
+      "id": "6fad"
+    },
+    {
+      "_id": 3,
+      "number": "#2049",
+      "customer": "Ashleigh Langosh",
+      "product": "At recusandae consectetur",
+      "price": 147,
+      "status": "Approved",
+      "id": "2c5b"
+    },
+    {
+      "_id": 4,
+      "number": "#2644",
+      "customer": "Angus Grady",
+      "product": "Ut voluptatem id earum et",
+      "price": 67,
+      "status": "Rejected",
+      "id": "e617"
+    },
+    {
+      "_id": 5,
+      "number": "#3592",
+      "customer": "Raheem Lehner",
+      "product": "Sunt similique distinctio",
+      "price": 135,
+      "status": "Approved",
+      "id": "443b"
+    }
+  ],
+  "recentactiviy": [
+    {
+      "_id": 1,
+      "time": "32 min",
+      "color": "text-success",
+      "content": "Quia quae rerum explicabo officiis beatae",
+      "highlight": "explicabo officiis",
+      "id": "5b99"
+    },
+    {
+      "_id": 2,
+      "time": "56 min",
+      "color": "text-danger",
+      "content": "Voluptatem blanditiis blanditiis eveniet",
+      "highlight": "",
+      "id": "ca18"
+    },
+    {
+      "_id": 3,
+      "time": "2 hrs",
+      "color": "text-primary",
+      "content": "Voluptates corrupti molestias voluptatem",
+      "highlight": "",
+      "id": "4a3e"
+    },
+    {
+      "_id": 4,
+      "time": "1 day",
+      "color": "text-info",
+      "content": "Tempore autem saepe occaecati voluptatem tempore",
+      "highlight": "occaecati voluptatem",
+      "id": "5fef"
+    },
+    {
+      "_id": 5,
+      "time": "2 days",
+      "color": "text-warning",
+      "content": "Est sit eum reiciendis exercitationem",
+      "highlight": "",
+      "id": "80c6"
+    },
+    {
+      "_id": 6,
+      "time": "4 weeks",
+      "color": "text-muted",
+      "content": "Dicta dolorem harum nulla eius. Ut quidem quidem sit quas",
+      "highlight": "",
+      "id": "75c5"
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "pet",
+      "name": "mohsen",
+      "gender": "male",
+      "price": "0$",
+      "description": "mohsen is 5 months golden dog",
+      "id": "b4da"
+    },
+    {
+      "_id": 2,
+      "category": "pet",
+      "name": "sozy",
+      "gender": "female",
+      "price": "0$",
+      "description": "sozy is 6 years cat",
+      "id": "53c9"
+    },
+    {
+      "_id": 3,
+      "category": "food",
+      "name": "dry cats food",
+      "gender": "none",
+      "price": "250$",
+      "description": "the best dry food you can afford for your best cat",
+      "id": "66cc"
+    },
+    {
+      "id": "cf73",
+      "name": "Mos3ad",
+      "gender": "male",
+      "category": "parrot",
+      "price": "0$",
+      "description": "mos3ad is our new friend parrot"
+    }
+  ]
+}

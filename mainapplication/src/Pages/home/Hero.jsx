@@ -5,7 +5,7 @@ import main from '../assets/mainphoto.jpg';
 
 function Hero() {
   return (
-    <section className="py-md-10 pt-5 bg-opacity-10 position-relative">
+    <section className="py-md-10 pt-5 bg-cust position-relative">
             <div className="container">
                <div className="row align-items-center py-lg-8">
                   <div className="col-md-6 col-12">

@@ -3,7 +3,7 @@ import './header.css'
 import mainIcon from '../assets/petopia.png';
 import Sun from '../assets/sun.svg';
 
-function Header() {
+function Header() {    
   return (
     <nav className='navbar navbar-default  navbar navbar-expand-lg navbar-light'>
         <div className='px-0 container'>
@@ -27,7 +27,7 @@ function Header() {
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="#Services">Services</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="/home#Services">Services</a>
                     </div>
 
                 </div>
@@ -48,21 +48,21 @@ function Header() {
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="#about">About Us</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="/home#about">About Us</a>
                     </div>
 
                 </div>
 
                 <div className='navbar-nav'>
                     <div className='nav-item show'>
-                     <a role="button" className="show nav-link colr" tabindex="0" href="#contact">Contact Us</a>
+                     <a role="button" className="show nav-link colr" tabindex="0" href="/home#contact">Contact Us</a>
                     </div>
 
                 </div>
                 </div>
 
                 <div className='d-flex align-items-center order-lg-3 flex-row navbar-nav'>
-                    <a type="checkbox" id="flexSwitchCheckDefault" className="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-2 mt-2" href="/">
+                    <a type="checkbox" id="flexSwitchCheckDefault" className="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-2 mt-2" href="..">
                          <input  className="form-check-input is-valid inp" value="light" />
                          <label className="form-check-label" >
                              <img src={Sun} alt='sun'/>

@@ -67,6 +67,10 @@ li
 
 
 }
+.formDiv .form .inputDiv label
+{
+  font-size: 16px!important;
+}
 .showMessage
 {
   display: block !important;
@@ -155,7 +159,7 @@ li
 {
   color: var(--lightWhite2)!important;
   /* font-size: 35px; */
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 
 }
 .loginPage .container .videoDiv .footerDiv
@@ -173,7 +177,7 @@ li
 }
 .loginPage .container .videoDiv .footerDiv .text
 {
-  color: var(--darkNavy)!important;
+  color: white!important;
 }
 .loginPage .container .videoDiv .footerDiv .btn
 {
@@ -207,9 +211,9 @@ li
 }
 .loginPage .container .formDiv .headerDiv h3
 {
-  font-size: 25px!important;
+  font-size: 30px!important;
   color: var(--darkNavy)!important;
-  font-weight: 600!important;
+  font-weight: 700!important;
 }
 .form
 {
@@ -313,9 +317,9 @@ li
 .formDiv .form{
   gap: .5rem!important;
 }
-.formDiv .form .inputDiv input
+.formDiv .form .inputDiv label
 {
-/* width: 100%!important; */
+width: 100%!important;
 
 }
 }
