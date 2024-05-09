@@ -46,39 +46,39 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 -   Parameters: None
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "name": "John Doe",
   "email": "john@example.com",
   "password": "password123"
 }
-`
+```
 
 Response Sample:
 
-     "status": "success", 
+   ```json  "status": "success", 
      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...","data": {
     "user": {
       "_id": "60983d60242cc9a42c7c823d",
       "name": "John Doe",
       "email": "john@example.com",
       ...
-    }
+    }```
   **POST /api/v1/login**
 
 -   Logs in an existing user.
 -   Parameters: None
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "email": "john@example.com",
   "password": "password123"
 }
-`
+```
 
 
 Response Sample:
 
-    "status":  "success",  "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",  "data":  {  "user":  {  "_id":  "60983d60242cc9a42c7c823d",  "name":  "John Doe",  "email":  "john@example.com", ... }  }
+   ```json "status":  "success",  "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",  "data":  {  "user":  {  "_id":  "60983d60242cc9a42c7c823d",  "name":  "John Doe",  "email":  "john@example.com", ... }  }```
 
 #### Cart Routes
 **GET /api/v1/cart**
@@ -87,7 +87,7 @@ Response Sample:
 -   Parameters: None
 -   Headers: Authorization token
 -   Response Sample:
-- `"status":  "success",  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823d",  "quantity":  2,  "price":  50.00, ... }, ... ],  "totalCartPrice":  100.00,  "totalPriceAfterDiscount":  90.00  }`
+- ```json"status":  "success",  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823d",  "quantity":  2,  "price":  50.00, ... }, ... ],  "totalCartPrice":  100.00,  "totalPriceAfterDiscount":  90.00  }```
 
 **POST /api/v1/cart/add/:productId**
 
@@ -95,7 +95,7 @@ Response Sample:
 -   Parameters: `productId` (Product ID)
 -   Headers: Authorization token
 -   Response Sample:
-- `"status":  "success",  "numOfCartItems":  3,  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823d",  "quantity":  2,  "price":  50.00, ... },  {  "product":  "60983d60242cc9a42c7c823e",  "quantity":  1,  "price":  30.00, ... }  ],  "totalCartPrice":  130.00,  "totalPriceAfterDiscount":  120.00  }`
+- ```json"status":  "success",  "numOfCartItems":  3,  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823d",  "quantity":  2,  "price":  50.00, ... },  {  "product":  "60983d60242cc9a42c7c823e",  "quantity":  1,  "price":  30.00, ... }  ],  "totalCartPrice":  130.00,  "totalPriceAfterDiscount":  120.00  }```
 
 **DELETE /api/v1/cart/remove/:productId**
 
@@ -103,7 +103,7 @@ Response Sample:
 -   Parameters: `productId` (Product ID)
 -   Headers: Authorization token
 -   Response Sample:
-- `"status":  "success",  "numOfCartItems":  1,  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823e",  "quantity":  1,  "price":  30.00, ... }  ],  "totalCartPrice":  30.00,  "totalPriceAfterDiscount":  30.00  }`
+- ```json"status":  "success",  "numOfCartItems":  1,  "data":  {  "_id":  "60983d60242cc9a42c7c823d",  "userId":  "60983d60242cc9a42c7c823d",  "cartItems":  [  {  "product":  "60983d60242cc9a42c7c823e",  "quantity":  1,  "price":  30.00, ... }  ],  "totalCartPrice":  30.00,  "totalPriceAfterDiscount":  30.00  }```
 
 
 
@@ -114,7 +114,7 @@ Response Sample:
     -   Parameters: None
     -   Headers: None
     -   Response Sample:
-    - ` { "status": "success",
+    - ```json { "status": "success",
           "data": [
             {
               "_id": "60983d60242cc9a42c7c823d",
@@ -124,7 +124,7 @@ Response Sample:
             },
             ...
           ]
-        }`
+        }```
    
 
      
@@ -135,30 +135,30 @@ Response Sample:
 -   Parameters: None
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "name": "Product Name",
   "description": "Product Description",
   ...
 }
-`
+```
 
 Response Sample:
 
-        {
+     ```json   {
       "status": "success",
       "data": {
         "_id": "60983d60242cc9a42c7c823d",
         "name": "Product Name",
         "description": "Product Description",
         ...
-      }
+      }```
 **GET /api/v1/products/:id**
 
 -   Retrieves a specific product by its ID.
 -   Parameters: `id` (Product ID)
 -   Headers: None
 -   Response Sample:
-- `{
+- ```json{
   "status": "success",
   "data": {
     "_id": "60983d60242cc9a42c7c823d",
@@ -167,7 +167,7 @@ Response Sample:
     ...
   }
 }
-`
+```
 
 
 **PUT /api/v1/products/:id**
@@ -176,33 +176,33 @@ Response Sample:
 -   Parameters: `id` (Product ID)
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "name": "New Product Name",
   "description": "Updated Product Description",
   ...
 }
-`
+```
 
 Response Sample:
 
-    {  "status": "success",  "data": {
+   ```json {  "status": "success",  "data": {
     "_id": "60983d60242cc9a42c7c823d",
     "name": "New Product Name",
     "description": "Updated Product Description",
     ...
     }
-    }
+    }```
 **DELETE /api/v1/products/:id**
 
 -   Deletes a specific product by its ID.
 -   Parameters: `id` (Product ID)
 -   Headers: None
 -   Response Sample:
-- `{
+- ```json{
   "status": "success",
   "data": null
 }
-`
+```
   
 #### Reviews Routes
   
@@ -212,46 +212,46 @@ Response Sample:
 -   Parameters: `productId` (Product ID)
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "rating": 5,
   "comment": "Great product, highly recommend!",
   ...
 }
-`
+```
 
 Response Sample:
 
-    { "status": "success",  "data": {
+  ```json  { "status": "success",  "data": {
     "_id": "60983d60242cc9a42c7c823d",
     "product": "60983d60242cc9a42c7c823d",
     "user": "60983d60242cc9a42c7c823d",
     "rating": 5,
     "comment": "Great product, highly recommend!",
     ...
-  
+  }```
   **PUT /api/v1/products/:productId/reviews/:reviewId**
 
 -   Updates a review for a specific product.
 -   Parameters: `productId` (Product ID), `reviewId` (Review ID)
 -   Headers: None
 -   Request Body Sample:
-- `{
+- ```json{
   "rating": 4,
   "comment": "Updated review comment.",
   ...
 }
-`
+```
 
  
 Response Sample:
 
-    {  "status": "success",  "data": {
+   ```json {  "status": "success",  "data": {
     "_id": "60983d60242cc9a42c7c823d",
     "product": "60983d60242cc9a42c7c823d",
     "user": "60983d60242cc9a42c7c823d",
     "rating": 4,
     "comment": "Updated review comment.",
-    ...
+    ...}```
   
   **DELETE /api/v1/products/:productId/reviews/:reviewId**
 
@@ -259,11 +259,11 @@ Response Sample:
 -   Parameters: `productId` (Product ID), `reviewId` (Review ID)
 -   Headers: None
 -   Response Sample:
-- `{
+- ```json{
   "status": "success",
   "data": null
 }
-`
+```
 
 
 
