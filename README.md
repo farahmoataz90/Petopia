@@ -1,4 +1,4 @@
-# Welcome to StackEdit!
+# Welcome to Petopia!
 
 Welcome to Petopia, where you can discover your ideal furry friend and give them a loving home! Petopia is a web application powered by React.js and Node.js that allows users to browse, connect, and adopt pets in need. Whether you're looking for a playful puppy, a cuddly kitten, or a loyal companion, Petopia has you covered.
 
