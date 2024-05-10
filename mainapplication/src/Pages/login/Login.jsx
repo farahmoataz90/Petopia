@@ -23,7 +23,6 @@ function Login() {
         }
         else {
             // Display login error message
-            // You can set up a state variable for displaying error message if needed
             console.log('Invalid credentials');
         }
     };

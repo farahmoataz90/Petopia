@@ -3,6 +3,7 @@ import './card.css'
 import { Link } from 'react-router-dom';
 
 function Card(props) {
+  console.log("Props in Card component:", props); // Log props to verify data
   return (
     <div>
             <div className="p-3">
@@ -25,8 +26,8 @@ function Card(props) {
                             </div>
                         </div>
          
-
-                <Link to={"/info"}>
+  
+                        <Link to={"/"}>
                  <button class="btn bcolor position-absolute top-0 end-0 m-3" >View</button>
                  </Link>
              </div>

@@ -19,7 +19,7 @@ import Sign from './Pages/signup/Sign';
 import Home from './Pages/home/Home';
 import AnimalPage from './Pages/pets/AnimalPage';
 import FoodPage from './Pages/food/FoodPage';
-import AnimalInfo from './Pages/InfoPet/AnimalInfo';
+// import AnimalInfo from './Pages/InfoPet/AnimalInfo';
 import Pay from './Pages/payment/Pay';
 import FullDashbord from './Pages/dashboard/FullDashbord';
 import Admin from './Pages/admin/Admin';
@@ -47,10 +47,10 @@ const router = createBrowserRouter([
     path:'/food',
     element: <FoodPage />
   },
-  {
-    path:'/info',
-    element: <AnimalInfo />
-  },
+  // {
+  //   path:'/info',
+  //   element: <AnimalInfo />
+  // },
   {
     path:'/payment',
     element: <Pay />
