@@ -3,3 +3,21 @@
     width:10px;
     white-space:nowrap;
 }
+.botton-orange
+{
+    background-color: orange;
+    color: white!important;
+}
+.botton-refresh
+{
+    color: orange!important;
+}
+.botton-refresh:hover
+{
+    color: white!important;
+
+}
+.edit-btn
+{
+    color: white!important;
+}

@@ -1,8 +1,17 @@
 .img{
-    height:410px;
+    height:100vh;
+    width: 100%;
+    border-radius: 20px;
     
 }
 .bcolor{
     background-color :#FF7700 !important; 
     color: white !important;
+    border-radius: 20px;
+
+}
+
+.ss{
+    border-radius: 20px!important;
+
 }

@@ -12,13 +12,13 @@
 
 a
 {
-  color: var(--primary);
-  text-decoration: none;
+  /* color: var(--primary);*/
+  text-decoration: none; 
   cursor: pointer;
 }
 a:hover
 {
-  color: var(--second);
+  /* color: var(--second); */
   text-decoration: none;
 }
 /* override bootstrap */

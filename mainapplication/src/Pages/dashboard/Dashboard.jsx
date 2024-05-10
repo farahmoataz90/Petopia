@@ -18,7 +18,7 @@ function Dashboard() {
       setCards(data);
     })
     .catch(e=>console.log(e.message));
-  };
+  };  
 
   useEffect(()=>{
     fetchData();

@@ -1,13 +1,32 @@
 import React, { useState } from 'react'
 import './login.css'
 import video from '../assets/video.mp4';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 
 
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
+
 
 
 function Login() {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate(); 
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        // Check if email and password match admin credentials
+        if (email === 'admin@gmail.com' && password === 'admin') {
+            // Redirect to Admin component
+            navigate('/admin');
+        }
+        else {
+            // Display login error message
+            // You can set up a state variable for displaying error message if needed
+            console.log('Invalid credentials');
+        }
+    };
     
   return (
     <div className='loginPage flex'>
@@ -35,14 +54,21 @@ function Login() {
                     <h3>Welcome Back!</h3>
                 </div>
 
-                <form action='POST' className='form grid'>
+                <form onSubmit={handleLogin} className='form grid'>
                     <span className='message'>login status will go here</span>
 
                     <div className="inputDiv">
                         <label htmlFor='Email'>Email</label>
                         <div className="input flex">
                             
-                            <input className='in' type=''  id='Email' placeholder='Enter your email address' />
+                            <input 
+                              className='in' 
+                              type='' 
+                              id='Email'
+                              placeholder='Enter your email address'
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)} 
+                            />
                         </div>
                     </div>
 
@@ -50,7 +76,14 @@ function Login() {
                         <label htmlFor='password'>Password</label>
                         <div className="input flex">
                             
-                            <input className='' type='password'  id='password' placeholder='Enter your password'/>
+                            <input 
+                              className='' 
+                              type='password'  
+                              id='password' 
+                              placeholder='Enter your password'
+                              value={password}
+                              onChange={(e) => setPassword(e.target.value)}
+                            />
                         </div>
                     </div>
 

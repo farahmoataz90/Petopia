@@ -3,9 +3,9 @@ import './pagetitle.css';
 
 function PageTitle() {
   return (
-    <div className="pagetitle">
+    <div className="pagetitle bg-transparent">
         <h1>Dashboard</h1>
-    <nav>
+    <nav className='bg-transparent shadow-none'>
         <ol className="breadcrumb">
             <li className="breadcrumb-item">
                 <a href="/">
@@ -16,7 +16,7 @@ function PageTitle() {
         </ol>
     </nav>
 </div>
-  )
+  )  
 }
 
 export default PageTitle

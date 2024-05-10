@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavAvatar() {
   return (
@@ -55,8 +56,9 @@ function NavAvatar() {
         <li>
             <a className='dropdown-item d-flex align-items-center' href='pages-faq.html'>
                 <i className='bi bi-box-arrow-right'></i>
+                <Link to={'/'}>
                 <span>Sign out</span>
-
+                </Link>
             </a>
         </li>
 

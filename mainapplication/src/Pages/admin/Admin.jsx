@@ -2,6 +2,7 @@ import React , { useEffect, useState } from 'react';
 import Header from '../header/Header';
 import './admin.css';
 import Footer from '../footer/Footer';
+import { Link } from 'react-router-dom';
 
 function Admin() {
   const[content , setContent] = useState(<ProductList showForm={showForm}/>); // initial value for the content
@@ -70,8 +71,12 @@ function ProductList(props)
   return(
     <>
     <h2 className='text-center mb-3'>List of Products</h2>
-    <button onClick={() => props.showForm({})} className='btn btn-primary me-2 my-3' type="button">Create</button>
-    <button onClick={() => fetchProducts()} className='btn btn-outline-primary me-2 my-3' type="button">Refresh</button>
+    <button onClick={() => props.showForm({})} className='btn botton-orange me-2 my-3' type="button">Create</button>
+    <button onClick={() => fetchProducts()} className='btn botton-refresh me-2 my-3' type="button">Refresh</button>
+   
+   <Link to={'/dashboard'}>
+    <button className='btn botton-refresh me-2 my-3' type="button">Dashboard</button>
+    </Link>
     <table className="table">
       <thead>
         <tr>
@@ -97,8 +102,8 @@ function ProductList(props)
                 <td>{product.price}</td>
                 <td>{product.description}</td>
                 <td className='style'>
-                  <button onClick={() => props.showForm(product)} type='button' className='btn btn-primary btn-sm me-2'>Edit</button>
-                  <button onClick={() => deleteProduct(product.id)} type='button' className='btn btn-danger btn-sm me-2'>Delete</button>
+                  <button onClick={() => props.showForm(product)} type='button' className='btn btn-primary edit-btn btn-sm me-2'>Edit</button>
+                  <button onClick={() => deleteProduct(product.id)} type='button' className='btn btn-danger edit-btn btn-sm me-2'>Delete</button>
                 </td>
 
               </tr>
@@ -257,18 +262,13 @@ function ProductForm(props)
                 <textarea type="text" className="form-control" name='description' defaultValue={props.product.description}/>
               </div>
             </div>
-            {/* <div className="row mb-3">
-              <label className="col-sm-4 col-form-label">Created At</label>
-              <div className="col-sm-8">
-                <input type="date" className="form-control" name='date' defaultValue={props.product.createdAt}/>
-              </div>
-            </div> */}
+     
             <div className="row ">
               <div className="offset-sm-4 col-sm-4 d-grid">
-                <button type='submit' className="btn btn-primary btn-sm me-3">Save</button>
+                <button type='submit' className="btn botton-orange btn-sm me-3">Save</button>
               </div>
               <div className="col-sm-4 d-grid">
-              <button onClick={()=> props.showList()} className='btn btn-secondary me-2' type="button">Cancel</button>
+              <button onClick={()=> props.showList()} className='btn btn-secondary edit-btn me-2' type="button">Cancel</button>
               </div>
             </div>
 

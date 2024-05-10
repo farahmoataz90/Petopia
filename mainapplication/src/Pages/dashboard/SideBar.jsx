@@ -55,7 +55,7 @@ function SideBar() {
 
        
 
-
+  
 
         <li className='nav-heading'>Pages</li>
         {navList.map(nav=>(
