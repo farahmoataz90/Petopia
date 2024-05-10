@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './card.css'
 import { Link } from 'react-router-dom';
+import Model from './Model';
 
 function Card(props) {
-  console.log("Props in Card component:", props); // Log props to verify data
+  const [model,setModel] = useState(false);
+
+  const getBox =()=>{
+    return setModel(true);
+  }
+
   return (
+    <>
     <div>
             <div className="p-3">
               <div class="card position-relative ss" >
@@ -25,15 +32,17 @@ function Card(props) {
                                 </div>
                             </div>
                         </div>
-         
-  
-                        <Link to={"/"}>
-                 <button class="btn bcolor position-absolute top-0 end-0 m-3" >View</button>
-                 </Link>
+                        <button class="btn bcolor position-absolute top-0 end-0 m-3" onClick={()=>getBox()}>Adopt</button>
              </div>
         </div>
       </div>
       </div>
+      {
+      
+      model === true ? <Model hide={()=>setModel(false)}/> : ''
+
+      }
+      </>
   )
 }
 
