@@ -34,6 +34,14 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 - Leave reviews and ratings for pets you've adopted to help others make informed decisions.
 - Stay updated with promotions, discounts, and new arrivals to find your perfect match.
 
+## Responsive on all Devices
+
+<p align="center">
+  <img src="Responsive.png" alt="GitHub Logo">
+</p> 
+
+
+
 ## Additional Information
 - For support or inquiries, contact our team at farahmoataz90@gmail.com.
 - Follow us on social media for updates and adorable pet stories:
