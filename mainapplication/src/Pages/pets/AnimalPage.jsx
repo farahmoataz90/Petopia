@@ -34,22 +34,22 @@ function AnimalPage() {
           <div className="container my-4">
                 <div className="row">
                   <div className="col-md-4"> 
-                     <Card image={Medhat} name="Medhat" age="1 year" category="Dog" imggg={male}/>
+                     <Card image={Medhat} name="Medhat" age="1 year" category="Dog" imggg={male} botton="Adopt"/>
                    </div>
                   <div className="col-md-4"> 
-                     <Card image={Bor3y} name="Bor3y" age="2 years" category="Cat" imggg={male}/>         
+                     <Card image={Bor3y} name="Bor3y" age="2 years" category="Cat" imggg={male} botton="Adopt"/>         
                    </div>
                    <div className="col-md-4"> 
-                     <Card image={Mello} name="Mello" age="1 year" category="Cat" imggg={female}/>
+                     <Card image={Mello} name="Mello" age="1 year" category="Cat" imggg={female} botton="Adopt"/>
                     </div>
                     <div className="col-md-4"> 
-                      <Card image={Mos3ad} name="Sa3dya" age="1 year" category="Monkey" imggg={female}/>
+                      <Card image={Mos3ad} name="Sa3dya" age="1 year" category="Monkey" imggg={female} botton="Adopt"/>
                     </div>
                     <div className="col-md-4"> 
-                      <Card image={Mojo} name="Mojo" age="3 months" category="Monkey" imggg={male}/>
+                      <Card image={Mojo} name="Mojo" age="3 months" category="Monkey" imggg={male} botton="Adopt"/>
                     </div>
                     <div className="col-md-4"> 
-                      <Card image={Hamatro} name="Hamtaro" age="3 months" category="Hamster" imggg={female}/>
+                      <Card image={Hamatro} name="Hamtaro" age="3 months" category="Hamster" imggg={female} botton="Adopt"/>
                     </div>
                 </div>
          <div className="container my-5"> 

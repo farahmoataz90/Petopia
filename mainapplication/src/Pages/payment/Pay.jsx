@@ -4,6 +4,7 @@ import './pay.css'
 import visa from '../assets/visa.svg';
 import mastercard from '../assets/mastercard.svg';
 import paypal from '../assets/paypal.svg';
+import Footer from '../footer/Footer';
 
 function Pay() {
   return (
@@ -18,7 +19,7 @@ function Pay() {
        <div className="container">
          <div className="row">
             <div className="col-lg-8 mb-6 mb-lg-0">
-            <div className="card bg-transparent mb-6 border-0">
+            <div className="card bg-transparent mb-6 border-0 shadow-none">
             <div className="card-header bg-transparent border-bottom d-flex justify-content-between align-items-center px-0">
             <h5 className='cols'>Personal info</h5>
             <a href="/" className="btn btn-light border mb-0">
@@ -93,7 +94,7 @@ function Pay() {
             </div>
             </div>
             </div>
-            <div className="card border-0 bg-transparent">
+            <div className="card border-0 bg-transparent shadow-none">
                 {/* <!-- Card header --> */}
 					<div className="card-header bg-transparent border-bottom px-0 pt-5">
 						<h5 className='cols'>Payment options</h5>
@@ -196,7 +197,7 @@ function Pay() {
     <button type="button" className="btn bttn rounded-2 mb-0">Apply</button>
 </form>
                     </div>
-                    {/* <!-- Card body --> */}
+                    {/* <!-- Card body --> */}  
 					<div className="card-body p-0 pb-3 mt-2">
 						<ul className="list-group list-group-borderless">
 							<li className="list-group-item d-flex justify-content-between align-items-center">
@@ -229,6 +230,7 @@ function Pay() {
         </div>
     </section>
 
+<Footer />
     </>
   )
 }

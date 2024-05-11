@@ -18,9 +18,13 @@ function Login() {
         e.preventDefault();
         // Check if email and password match admin credentials
         if (email === 'admin@gmail.com' && password === 'admin') {
-            // Redirect to Admin component
+            
             navigate('/admin');
         }
+        else if (email==='user@gmail.com' && password === 'user')
+            {
+                navigate('/home');
+            }
         else {
             // Display login error message
             console.log('Invalid credentials');

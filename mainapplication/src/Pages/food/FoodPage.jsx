@@ -37,22 +37,22 @@ function FoodPage() {
     <div className="container my-4">
     <div className="row">
               <div className="col-md-4"> 
-                <Card image={food5} name="Fresh Kisses" category=" exclusive formula for your dog" age="$20" imggg={cart}/>
+                <Card image={food5} name="Fresh Kisses" category=" exclusive formula for your dog" age="$20" imggg={cart} botton="Buy"/>
               </div>
               <div className="col-md-4"> 
-                <Card image={food6} name="Hams Bites" category="Dry food for your little Hamster" age="$10" imggg={cart}/>
+                <Card image={food6} name="Hams Bites" category="Dry food for your little Hamster" age="$10" imggg={cart} botton="Buy"/>
               </div>
                 <div className="col-md-4"> 
-                <Card image={food1} name="Bone Bites" category="crispy bites for your dogs as a snack" age="$10" imggg={cart}/>      
+                <Card image={food1} name="Bone Bites" category="crispy bites for your dogs as a snack" age="$10" imggg={cart} botton="Buy"/>      
                 </div>
                 <div className="col-md-4"> 
-                <Card image={food4} name="Doogie Cannie" category="canned food for dogs" age="$25" imggg={cart}/>
+                <Card image={food4} name="Doogie Cannie" category="canned food for dogs" age="$25" imggg={cart} botton="Buy"/>
                 </div>
                 <div className="col-md-4"> 
-                <Card image={food3} name="Dry Food" category="Dry Food Goodies suitable as a snack" age="$10" imggg={cart}/>
+                <Card image={food3} name="Dry Food" category="Dry Food Goodies suitable as a snack" age="$10" imggg={cart} botton="Buy"/>
                 </div>
                 <div className="col-md-4"> 
-                <Card image={food2} name="Natural Instinct" category="crispy bites for your dogs as a snack" age="$50" imggg={cart}/>
+                <Card image={food2} name="Natural Instinct" category="crispy bites for your dogs as a snack" age="$50" imggg={cart} botton="Buy"/>
                 </div>
 
     </div>

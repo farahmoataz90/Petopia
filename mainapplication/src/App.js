@@ -23,6 +23,7 @@ import FoodPage from './Pages/food/FoodPage';
 import Pay from './Pages/payment/Pay';
 import FullDashbord from './Pages/dashboard/FullDashbord';
 import Admin from './Pages/admin/Admin';
+// import Details from './Pages/details/Details';
 
 const router = createBrowserRouter([
   {
@@ -48,8 +49,8 @@ const router = createBrowserRouter([
     element: <FoodPage />
   },
   // {
-  //   path:'/info',
-  //   element: <AnimalInfo />
+  //   path:'/details',
+  //   element: <Details />
   // },
   {
     path:'/payment',

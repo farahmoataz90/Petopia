@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import './card.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Model from './Model';
 
 function Card(props) {
-  const [model,setModel] = useState(false);
+  const [model, setModel] = useState(false);
+  const navigate = useNavigate();
 
-  const getBox =()=>{
-    return setModel(true);
-  }
-
+  const handleButtonClick = () => {
+    if (props.botton === "Buy") {
+      navigate("/payment");
+    } else {
+      setModel(true);
+    }
+  };
   return (
     <>
     <div>
@@ -32,14 +36,15 @@ function Card(props) {
                                 </div>
                             </div>
                         </div>
-                        <button class="btn bcolor position-absolute top-0 end-0 m-3" onClick={()=>getBox()}>Adopt</button>
+                        <button class="btn bcolor position-absolute top-0 end-0 m-3"onClick={handleButtonClick}>{props.botton}</button>
              </div>
         </div>
       </div>
       </div>
-      {
       
-      model === true ? <Model hide={()=>setModel(false)}/> : ''
+      
+      {
+        model && <Model hide={() => setModel(false)} />
 
       }
       </>
