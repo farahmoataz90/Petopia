@@ -1,12 +1,10 @@
 # Welcome to Petopia!
 
+Welcome to Petopia, where you can discover your ideal furry friend and give them a loving home! Petopia is a web application powered by React.js and Node.js that allows users to browse, connect, and adopt pets in need. Whether you're looking for a playful puppy, a cuddly kitten, or a loyal companion, Petopia has you covered.
 
 <p align="center">
-  <img src="Mockup.png" alt="GitHub Logo">
-</p>  
-
-
-Welcome to Petopia, where you can discover your ideal furry friend and give them a loving home! Petopia is a web application powered by React.js and Node.js that allows users to browse, connect, and adopt pets in need. Whether you're looking for a playful puppy, a cuddly kitten, or a loyal companion, Petopia has you covered.
+  <img src="Mockup.png" alt="GitHub Logo" width="700" height="900">
+</p> 
 
 ## Installation Instructions
 1. Clone this repository to your local machine.
