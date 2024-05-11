@@ -35,12 +35,9 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 - Stay updated with promotions, discounts, and new arrivals to find your perfect match.
 
 ## Responsive on all Devices
-
 <p align="center">
   <img src="Responsive.png" alt="GitHub Logo">
 </p> 
-
-
 
 ## Additional Information
 - For support or inquiries, contact our team at farahmoataz90@gmail.com.
