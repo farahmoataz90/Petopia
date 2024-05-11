@@ -34,6 +34,12 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 - For support or inquiries, contact our team at farahmoataz90@gmail.com.
 - Follow us on social media for updates and adorable pet stories:
     - [Facebook](https://www.facebook.com/farah.moataz1/)
+ 
+
+## Petopia Model Diagram
+
+![Petopia Model Diagram](Screenshot 2024-05-11 133907.png)
+
 
 ## Requirements Documentation
 
