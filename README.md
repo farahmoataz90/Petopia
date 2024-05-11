@@ -38,7 +38,7 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 
 ## Petopia Model Diagram
 
-![Petopia Model Diagram](Screenshot 2024-05-11 133907.png)
+![Petopia Model Diagram](ModelDiagram.png)
 
 
 ## Requirements Documentation
