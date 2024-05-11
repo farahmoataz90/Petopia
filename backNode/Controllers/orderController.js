@@ -7,16 +7,12 @@ const AppError = require('../utils/appError');
 
 
 module.exports.createOrder = asyncHandler(async (req, res, next) => {
-    // params -> cart_id
+
     const taxPrice = 0;
     const shippingPrice = 0;
-    console.log('1')
     const cart = await Cart.findOne({userId: req.user._id});
-    console.log('2')
     if (!cart)
         return next(new AppError('no cart for this user exist', 400));
-    console.log('3')
-        console.log(cart)
     
     const cartPrice = cart.totalPriceAfterDiscount
     ? cart.totalPriceAfterDiscount
@@ -25,7 +21,6 @@ module.exports.createOrder = asyncHandler(async (req, res, next) => {
     const totalOrderPrice = cartPrice + taxPrice + shippingPrice;
 
     const order = await Order.create({ user: req.user._id, cartItems: cart.cartItems, totalOrderPrice });
-    console.log(order);
     const bulkOption = cart.cartItems.map((item) => ({
         updateOne: {
             filter: {_id: item.product},
@@ -45,7 +40,18 @@ module.exports.createOrder = asyncHandler(async (req, res, next) => {
 
 
 
-module.exports.viewAllOrders = async (req, res, next) => {
+module.exports.viewAllUsersOrders = async (req, res, next) => {
+    const orders = await Order.find();
+    if (!orders)
+        return next(new AppError('no orders were found', 400));
+
+    res.status(200).json({
+        status: 'success',
+        data: orders
+    });
+};
+
+module.exports.viewUserOrders = async (req, res, next) => {
     const orders = await Order.find({user: req.user._id});
     if (!orders)
         return next(new AppError('no orders were found', 400));

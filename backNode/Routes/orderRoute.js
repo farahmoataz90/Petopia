@@ -3,20 +3,24 @@ const router = express.Router();
 const orderController = require('../Controllers/orderController');
 const authController = require('../Controllers/authController');
 
+router.use(authController.protect);
+// admin view orders
+router.get("/all-orders",authController.restrictTo('admin'), orderController.viewAllUsersOrders);
+
 // View Orders
-router.get("/", authController.protect, orderController.viewAllOrders);
-router.get("/delivered", authController.protect, orderController.ViewDeliveredOrders);
-router.get("/undelivered", authController.protect, orderController.ViewUnDeliveredOrders);
-router.get("/:id", authController.protect, orderController.viewOrder);
+router.get("/", orderController.viewUserOrders);
+router.get("/delivered", orderController.ViewDeliveredOrders);
+router.get("/undelivered", orderController.ViewUnDeliveredOrders);
+router.get("/:id", orderController.viewOrder);
 
 // Create Order
-router.post("/create", authController.protect, orderController.createOrder);
+router.post("/create", orderController.createOrder);
 
 // Update Order
-router.patch("/pay/:order_id", authController.protect, orderController.updateOrderToPaid);
-router.patch("/deliver/:order_id", authController.protect, orderController.updateOrderToDelivered);
+router.patch("/pay/:order_id",  orderController.updateOrderToPaid);
+router.patch("/deliver/:order_id", orderController.updateOrderToDelivered);
 
 // Dashboard
-router.get("/dashboard", authController.protect, orderController.getDashboardData);
+router.get("/dashboard", orderController.getDashboardData);
 
 module.exports = router;

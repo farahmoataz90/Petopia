@@ -1,6 +1,3 @@
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -46,7 +43,7 @@ app.use(mongoSanitize());
 // Data sanitization against XSS
 app.use(xss());
 
-// 3) ROUTES  
+// 3) ROUTES
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/products', productRouter);
 app.use('/api/v1/order', orderRouter);
