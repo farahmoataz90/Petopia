@@ -380,6 +380,6 @@ DELETE /api/v1/cart/remove/:productId**
 
 ## Thank you for using Petopia! We hope you find your perfect furry friend. If you have any questions or feedback, feel free to reach out to us.
 <p align="center">
-  <img src="mainapplication/src/Pages/assets/funcat.gif" alt="GitHub Logo" width="100" height="100">
+  <img src="mainapplication/src/Pages/assets/funcat.gif" alt="GitHub Logo" width="300" height="300">
 </p>
 
