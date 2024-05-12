@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Model from './Model';
 
 function Card(props) {
+  
   const [model, setModel] = useState(false);
   const navigate = useNavigate();
 

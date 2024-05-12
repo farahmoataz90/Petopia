@@ -40,3 +40,8 @@
     color: #d65627;
     
 }
+
+.dashboard .top-selling .imageeee {
+    border-radius: 5px!important;
+    max-width: 60px!important;
+}

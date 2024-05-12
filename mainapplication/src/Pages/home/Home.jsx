@@ -6,6 +6,7 @@ import Buddy from './Buddy'
 import About from './About'
 import Contact from './Contact'
 import Footer from '../footer/Footer'
+import BackToTop from '../dashboard/BackToTop'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <About />
       <Contact />
       <Footer />
+      <BackToTop />
 
    </main>
     </>

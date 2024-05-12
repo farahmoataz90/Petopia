@@ -10,7 +10,7 @@
     vertical-align: middle;
 }
 
-.dashboard .top-selling img {
-    border-radius: 5px;
-    max-width: 60px;
+.dashboard .top-selling .imageeee {
+    border-radius: 5px!important;
+    max-width: 60px!important;
 }

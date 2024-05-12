@@ -1,11 +1,14 @@
 import React from 'react'
 
 function TopSellingItem({ item }) {
+    let imgStyle = {
+        width: "60px"
+    }
   return (
     <tr>
     <th scope="row">
-        <a href="#">
-            <img src={item.preview} alt="" />
+        <a href="#" className='imageeee'>
+            <img src={item.preview} alt="" className='imageeee' style={imgStyle}/>
         </a>
     </th>
     <td>

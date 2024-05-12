@@ -5,7 +5,7 @@ import Title from './Title';
 import Item from './Item';
 import Card from './Card';
 import Medhat from '../assets/Medhat.png'
-// import Pageno from './Pageno';
+
 import Footer from '../footer/Footer';
 import male from '../assets/male.png';
 import female from '../assets/FemaleIcon.png';
@@ -14,6 +14,7 @@ import Mello from '../assets/Mello.png';
 import Mos3ad from '../assets/Masoad.png';
 import Mojo from '../assets/Mojo.png';
 import Hamatro from '../assets/Hamtaro.png';
+import BackToTop from '../dashboard/BackToTop';
 
 
 function AnimalPage() {
@@ -57,6 +58,7 @@ function AnimalPage() {
          </div>
     </div>
     <Footer />
+    <BackToTop />
     </>
   )
 }

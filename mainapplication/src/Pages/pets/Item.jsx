@@ -9,9 +9,9 @@ function Item(props) {
             { props.name}
         </button>
         <ul class="dropdown-menu">
-            <li><a className="dropdown-item" href="#">{ props.item1}</a></li>
-            <li><a className="dropdown-item" href="#">{ props.item2}</a></li>
-            <li><a className="dropdown-item" href="#">{ props.item3}</a></li>
+            <li><a className="dropdown-item" href="#">{props.item1}</a></li>
+            <li><a className="dropdown-item" href="#">{props.item2}</a></li>
+            <li><a className="dropdown-item" href="#">{props.item3}</a></li>
         </ul>
         </div>
        

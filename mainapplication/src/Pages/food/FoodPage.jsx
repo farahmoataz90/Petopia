@@ -18,6 +18,7 @@ import food5 from '../assets/FreshKissesFood.png';
 import food6 from '../assets/HamsBites.png';
 
 import cart from '../assets/22222-removebg-preview.png';
+import BackToTop from '../dashboard/BackToTop';
 
 function FoodPage() {
   return (
@@ -62,6 +63,7 @@ function FoodPage() {
     </div>
     </div>
     <Footer />
+    <BackToTop />
     </>
   )
 }

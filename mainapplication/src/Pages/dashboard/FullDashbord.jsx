@@ -4,6 +4,7 @@ import HeaderDash from './HeaderDash'
 import SideBar from './SideBar';
 import DashContent from './DashContent';
 import Footer from '../footer/Footer';
+import BackToTop from './BackToTop';
 
 function FullDashbord() {
   return (
@@ -12,6 +13,7 @@ function FullDashbord() {
    <SideBar />
    <DashContent />
    <Footer />
+   <BackToTop />
    </>
   )
 }
