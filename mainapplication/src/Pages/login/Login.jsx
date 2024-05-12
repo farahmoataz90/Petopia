@@ -14,20 +14,28 @@ function Login() {
     const [password, setPassword] = useState('');
     const navigate = useNavigate(); 
 
+    const [isValid, setIsValid] = useState(true);
+    
+    const mess = <span className='message'>login status will go here</span>
+
     const handleLogin = (e) => {
         e.preventDefault();
         // Check if email and password match admin credentials
         if (email === 'admin@gmail.com' && password === 'admin') {
             
+            setIsValid(true);
             navigate('/admin');
         }
         else if (email==='user@gmail.com' && password === 'user')
             {
+                setIsValid(true);
                 navigate('/home');
             }
-        else {
-            // Display login error message
-            console.log('Invalid credentials');
+        else 
+        {
+            setIsValid(false);
+            // return mess;
+
         }
     };
     
@@ -50,7 +58,7 @@ function Login() {
             </div>
 
             </div>
-
+  
             <div className="formDiv flex">
                 <div className="headerDiv">
                     
@@ -58,7 +66,12 @@ function Login() {
                 </div>
 
                 <form onSubmit={handleLogin} className='form grid'>
-                    <span className='message'>login status will go here</span>
+                    {/* <span className='message'>login status will go here</span> */}
+                    {!isValid && (
+                            <span className='message'>
+                                Invalid email or password. Please try again.
+                            </span>
+                        )}
 
                     <div className="inputDiv">
                         <label htmlFor='Email'>Email</label>

@@ -63,7 +63,8 @@ li
 .message
 {
   /* show when the account is invalid */
-  display: none !important; 
+  display: block !important; 
+  color: red;
 
 
 }
