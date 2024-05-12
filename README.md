@@ -53,8 +53,6 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 
 ### API Routes
 
-# API Documentation
-
 ## Authentication API
 
 ### 1. Signup
@@ -402,8 +400,6 @@ Welcome to Petopia, where you can discover your ideal furry friend and give them
 ```
 **Status Code:** `204 No Content`
 
-## Usage Guidelines
-- Refer to individual endpoints for usage guidelines.
 
 ## Thank you for using Petopia! We hope you find your perfect furry friend. If you have any questions or feedback, feel free to reach out to us.
 <p align="center">
