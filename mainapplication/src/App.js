@@ -6,7 +6,7 @@ import'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'remixicon/fonts/remixicon.css';
 
-
+import { useState,useEffect } from 'react';
 //import router dom
 import {
   createBrowserRouter,
@@ -23,57 +23,113 @@ import FoodPage from './Pages/food/FoodPage';
 import Pay from './Pages/payment/Pay';
 import FullDashbord from './Pages/dashboard/FullDashbord';
 import Admin from './Pages/admin/Admin';
+import Preloader from './Pages/preloader/Preloader';
 // import Details from './Pages/details/Details';
 
-const router = createBrowserRouter([
-  {
-    path:'/',  
-    element:<Login />
+const AppWithLoader = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-  },
-  {
-    path:'/SignUP',
-    element:<Sign />
+  useEffect(() => {
+    // Simulate a loading delay with setTimeout
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+  }, []);
 
-  },
-  {
-    path:'/home',
-    element: <Home/>
-  },
-  {
-    path:'/adopt',
-    element: <AnimalPage />
-  },
-  {
-    path:'/food',
-    element: <FoodPage />
-  },
-  // {
-  //   path:'/details',
-  //   element: <Details />
-  // },
-  {
-    path:'/payment',
-    element: <Pay />
-  },
-  {
-    path:'/dashboard',
-    element: <FullDashbord />
-  },
-  {
-    path:'/admin',
-    element: <Admin />
+  if (isLoading) {
+    return <Preloader />;
   }
 
+  return <AppWithoutLoader />;
+};
 
+const AppWithoutLoader = () => {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Login />
+    },
+    {
+      path: '/SignUP',
+      element: <Sign />
+    },
+    {
+      path: '/home',
+      element: <Home />
+    },
+    {
+      path: '/adopt',
+      element: <AnimalPage />
+    },
+    {
+      path: '/food',
+      element: <FoodPage />
+    },
+    {
+      path: '/payment',
+      element: <Pay />
+    },
+    {
+      path: '/dashboard',
+      element: <FullDashbord />
+    },
+    {
+      path: '/admin',
+      element: <Admin />
+    }
+  ]);
 
-])
-
-function App() {
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
+  );
+};
+
+
+
+// const router = createBrowserRouter([
+//   {
+//     path:'/',  
+//     element:<Login />
+
+//   },
+//   {
+//     path:'/SignUP',
+//     element:<Sign />
+
+//   },
+//   {
+//     path:'/home',
+//     element: <Home/>
+//   },
+//   {
+//     path:'/adopt',
+//     element: <AnimalPage />
+//   },
+//   {
+//     path:'/food',
+//     element: <FoodPage />
+//   },
+//   {
+//     path:'/payment',
+//     element: <Pay />
+//   },
+//   {
+//     path:'/dashboard',
+//     element: <FullDashbord />
+//   },
+//   {
+//     path:'/admin',
+//     element: <Admin />
+//   }
+
+// ])
+
+function App() {
+  
+  return (
+     <AppWithLoader />
   );
 }
 
