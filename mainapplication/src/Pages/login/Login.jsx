@@ -16,7 +16,6 @@ function Login() {
 
     const [isValid, setIsValid] = useState(true);
     
-    const mess = <span className='message'>login status will go here</span>
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -34,7 +33,7 @@ function Login() {
         else 
         {
             setIsValid(false);
-            // return mess;
+            
 
         }
     };
@@ -66,7 +65,7 @@ function Login() {
                 </div>
 
                 <form onSubmit={handleLogin} className='form grid'>
-                    {/* <span className='message'>login status will go here</span> */}
+                    
                     {!isValid && (
                             <span className='message'>
                                 Invalid email or password. Please try again.

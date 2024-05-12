@@ -45,7 +45,6 @@ function Card(props) {
       
       {
         model && <Model hide={() => setModel(false)} />
-
       }
       </>
   )
